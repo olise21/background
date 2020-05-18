@@ -1,0 +1,19 @@
+body{
+    padding: 200px 0px 0% 0%;
+    overflow: hidden;
+}
+button{
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: no1px solid black;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+@media screen and(max-width: 424px){
+    button{
+        width: 50%;
+    }
+}

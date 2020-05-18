@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Change Background</title>
+        <link href="backgound.css" rel="stylesheet" type="text/css">
+    </head>
+    <body id="body">
+        <button type="button" onclick="changeColor();" id="button">Change Background</button>
+    </body>
+    <script>
+        var colors =["blue","orange","orangered","yellow","purple","azure","red","brown","green","violet","purple","indigo","grey","black","chocolate","crimson","burlywood","darkgreen","cyan","firebrick","green","","purple","indigo","blue","orange","orangered","yellow","purple","azure","red","brown","green","violet","purple","indigo","grey","black","chocolate","crimson","burlywood","darkgreen","cyan","firebrick","green","","purple","indigo"];
+        var colorIndex = 0;
+        function changeColor(){
+            var col = document.getElementById("body");
+            if(colorIndex >= colors.legnth){
+                colorIndex = 0;
+            }
+            col.style.backgroundColor = colors[colorIndex];
+            colorIndex++;
+        }
+    </script>
+</html>
